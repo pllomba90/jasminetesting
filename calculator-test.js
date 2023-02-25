@@ -13,7 +13,7 @@ it('should calculate the monthly rate correctly', function () {
   });
   
   it ("should throw an error if string is entered", function(){
-    if (values = NaN);
-    expect(calculateMonthlyPayment(values)).toThrowError("Please enter a number");
+    const values = NaN;
+    expect(calculateMonthlyPayment(values)).toThrow(new Error( "Please enter a number"));
   })
   
